@@ -72,7 +72,7 @@ img { display: block; max-width: 100%; }
 }
 .nav-name {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 24px;
   color: var(--yellow);
   transform: rotate(-1deg);
 }
@@ -107,10 +107,16 @@ img { display: block; max-width: 100%; }
 /* ── BARBER SPLATTER LOGO ── */
 .splat-wrap {
   position: relative;
-  width: 190px;
-  height: 190px;
+  width: 270px;
+  height: 270px;
   flex-shrink: 0;
   margin: 0 auto;
+}
+.splat-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,0.5));
 }
 .splat-bg {
   position: absolute;
@@ -228,13 +234,13 @@ img { display: block; max-width: 100%; }
 .tape {
   height: 4px;
   margin: 0 16px;
-  background: repeating-linear-gradient(
+  background: linear-gradient(
     90deg,
-    var(--red) 0 14px,
-    var(--yellow) 14px 28px,
-    var(--teal) 28px 42px,
-    var(--blue) 42px 56px,
-    var(--purple) 56px 70px
+    var(--red),
+    var(--yellow),
+    var(--teal),
+    var(--blue),
+    var(--purple)
   );
 }
 
@@ -242,7 +248,7 @@ img { display: block; max-width: 100%; }
 .sec-eyebrow {
   font-family: var(--font-script);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 22px;
   color: var(--yellow);
   display: inline-block;
   transform: rotate(-2deg);
@@ -492,7 +498,7 @@ img { display: block; max-width: 100%; }
     gap: 28px;
     text-align: left;
   }
-  .splat-wrap { width: 170px; height: 170px; margin: 0; }
+  .splat-wrap { width: 240px; height: 240px; margin: 0; }
   .splat-text .l1, .splat-text .l3 { font-size: 24px; }
   .splat-text .l2 { font-size: 14px; margin: -4px 0; }
   .splat-drip1 { top: 144px; left: 46px; }
@@ -557,7 +563,7 @@ img { display: block; max-width: 100%; }
     max-width: 1280px;
     margin: 0 auto;
   }
-  .splat-wrap { width: 230px; height: 230px; }
+  .splat-wrap { width: 340px; height: 340px; }
   .splat-text .l1, .splat-text .l3 { font-size: 32px; }
   .splat-text .l2 { font-size: 18px; }
   .splat-drip1 { top: 192px; left: 62px; }
@@ -602,7 +608,7 @@ img { display: block; max-width: 100%; }
 
 /* ── SMALL MOBILE TWEAK ── */
 @media (max-width: 380px) {
-  .splat-wrap { width: 160px; height: 160px; }
+  .splat-wrap { width: 210px; height: 210px; }
   .splat-text .l1, .splat-text .l3 { font-size: 24px; }
   .hero-h1 { font-size: 19px; }
 }
